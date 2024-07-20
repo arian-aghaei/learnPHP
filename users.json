@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Reza",
+    "username": "reza24",
+    "password": "1234",
+    "tasks": [
+      {
+        "text": "1",
+        "done": true
+      },
+      {
+        "text": "2",
+        "done": false
+      }
+    ]
+  },
+  {
+    "name": "Arian",
+    "username": "arianA",
+    "password": "1111",
+    "tasks": []
+  },
+  {
+    "name": "Mohammad",
+    "username": "mmd",
+    "password": "6565",
+    "tasks": []
+  }
+]
