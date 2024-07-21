@@ -1,13 +1,7 @@
 <?php
-//global $array;
-//global $founded;
-if($_COOKIE['login']){
-    echo "Wellcome to your account ".$_COOKIE['user'];
+require_once '../config/isLogin.php';
 
-}
-else
-    header('Location: ../index.php');
-
+echo "Welcome to your account ".$_COOKIE['user'];
 ?>
 
 <!doctype html>
@@ -25,10 +19,10 @@ else
     <div class="container">
         <div class="col-6 mt-5">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item"><a class="text-decoration-none" href="">add a task</a></li>
+                <li class="list-group-item"><a class="text-decoration-none" href="account/newTask">add a task</a></li>
                 <li class="list-group-item"><a class="text-decoration-none" href="account/tasks">visit tasks</a></li>
-                <li class="list-group-item"><a class="text-decoration-none" href="">log out</a></li>
-                <li class="list-group-item"><a class="text-decoration-none" href="">delete account</a></li>
+                <li class="list-group-item"><a class="text-decoration-none" href=".">log out</a></li>
+                <li class="list-group-item"><a class="text-decoration-none" href="account/deleteAccount">delete account</a></li>
             </ul>
         </div>
     </div>

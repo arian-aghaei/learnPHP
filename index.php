@@ -1,6 +1,9 @@
 <?php
-
+if($_POST){
+    header('Location: ./signup');
+}
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -46,7 +49,9 @@
         }
         ?>
         <div>
-            <button class="btn btn-primary " type="submit">Login</button>
+            <button class="btn btn-primary me-5" type="submit">Login</button>
+            <label for="signup">Don't have an account?</label>
+            <a href="./signup" class="btn btn-success">sign up</a>
         </div>
     </form>
 </div>
